@@ -1,12 +1,9 @@
-import ProdutoItem from "@/components/produto/Produtoitem";
-import { produtos } from "@/core";
+import ListaProdutos from "@/components/produto/ListaProdutos";
 
 export default function Home() {
   return (
-    <div className="grid gap-5 grid-cols-4 container">
-      {produtos.map((produto) => (
-        <ProdutoItem key={produto.id} produto={produto} />
-      ))}
+    <div className=" flex-1 flex flex-col py-10 container">
+      <ListaProdutos />
     </div>
   );
 }
